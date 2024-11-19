@@ -29,15 +29,16 @@ class TaskController extends GetxController
     await getData();
   }
 
-  Future<RxList> insertData(String title,String des,String due,String category)
+  Future<void> insertData(String title,String des,String due,String category)
   async {
-     dataList.value = await DbHelper.dbHelper.insertDatabase(title, des, due, category);
+     await DbHelper.dbHelper.insertDatabase(title, des, due, category);
      getData();
-     return dataList;
+
   }
-  Future<void> getData()
+  Future<RxList> getData()
   async {
     dataList.value = await DbHelper.dbHelper.readDataFromTable();
+    return dataList;
   }
 
   Future<void> removeData(int id)
@@ -55,6 +56,6 @@ class TaskController extends GetxController
 
   Future<void> searchCategory(String title)
   async {
-    await DbHelper.dbHelper.searchData(title);
+   dataList.value =  await DbHelper.dbHelper.searchData(title);
   }
 }

@@ -21,7 +21,7 @@ class DbHelper {
       onCreate: (db, version) async {
         String sql =
             '''CREATE TABLE task(id INTEGER AUTOINCREMENT,title TEXT,des TEXT,due TEXT,category TEXT);''';
-        await db.execute(sql);
+        return await db.execute(sql);
       },
     );
     return _db!;
@@ -60,8 +60,8 @@ class DbHelper {
   Future<List<Map<String, Object?>>> searchData(String title)
   async {
     Database? db = await database;
-    String sql = "SELECT * FROM task title LIKE '%$title%'";
-
+    String sql = "SELECT * FROM task WHERE title LIKE '%$title%'";
     return await db.rawQuery(sql);
   }
+
 }
