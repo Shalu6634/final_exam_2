@@ -1,5 +1,19 @@
 # final_exam
 
+Description:-
+This is a simple Task Management App built using Flutter, SQLite, and Firebase. The app allows users to:
+
+Create, update, delete, and categorize tasks.
+Sync tasks with Firebase for cloud backup and real-time synchronization across devices.
+
+Features Local storage with SQLite:
+Tasks are stored locally on the device using SQLite, allowing for offline access and efficient data management.
+Cloud synchronization with Firebase: Tasks are automatically backed up to Firebase Firestore, ensuring data is synced across multiple devices and securely stored in the cloud.
+Task categorization: Users can categorize tasks (e.g., Work, Personal, Shopping) to keep tasks organized.
+Task completion: Users can mark tasks as completed or pending.
+Cross-platform: The app works on both Android and iOS.
+
+
 
 
 <p>
