@@ -30,3 +30,5 @@ Cross-platform: The app works on both Android and iOS.
 
 ![Screenshot 2024-11-19 131218](https://github.com/user-attachments/assets/5f6e592a-5614-4865-9b50-6ac7e7a3ede2)
 ![Screenshot 2024-11-19 131205](https://github.com/user-attachments/assets/5de64945-225b-434f-bb60-f766662347b0)
+## video link
+https://drive.google.com/drive/folders/1IE_cCFrWQUelpD8OUNmSrZpADAK9LKOI
