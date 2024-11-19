@@ -11,6 +11,7 @@ class SignUp extends StatelessWidget {
     var controller = Get.put(TaskController());
     return Scaffold(
       appBar: AppBar(
+
         centerTitle: true,
         backgroundColor: Colors.black,
         title: const Text('Sign-Up',style: TextStyle(color: Colors.white),),

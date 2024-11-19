@@ -35,6 +35,7 @@ class DbHelper {
     await db.rawInsert(sql,args);
   }
 
+
   Future<List<Map<String, Object?>>> readDataFromTable()
   async {
     Database? db = await database;

@@ -26,6 +26,7 @@ class SignIn extends StatelessWidget {
               decoration: const InputDecoration(
                 labelText: 'Email',
                 enabledBorder: OutlineInputBorder(),
+
                 focusedBorder: OutlineInputBorder(),
               ),
             ),

@@ -138,11 +138,13 @@ class HomePage extends StatelessWidget {
                           children: [
                             IconButton(
                                 onPressed: () {
+
                                   controller.removeData(
                                       controller.dataList[index]['id']);
                                 },
                                 icon: const Icon(
                                   Icons.delete,
+
                                   color: Colors.red,
                                 )),
                             IconButton(

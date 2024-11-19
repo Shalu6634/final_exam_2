@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 class CloudFireService {
   CloudFireService._();
 
+
   static CloudFireService cloudFireService = CloudFireService._();
   List docIdList = [];
   FirebaseFirestore firestore = FirebaseFirestore.instance;
