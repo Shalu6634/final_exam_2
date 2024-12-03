@@ -64,4 +64,15 @@ class DbHelper {
     return await db.rawQuery(sql);
   }
 
+
+  //  Future<List<Map<String, Object?>>> selectData(String email,String type)
+  // async {
+  //   final db=await database;
+  //   String sql='''
+  //   SELECT * FROM fitness WHERE email=? AND type=?;
+  //   ''';
+  //   List args=[email,type];
+  //   return await db!.rawQuery(sql,args);
+  // }
+
 }
